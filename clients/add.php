@@ -6,7 +6,7 @@
 <body>
 <?php
 //including the database connection file
-include_once("config.php");
+include_once("../config.php");
 
 if(isset($_POST['Submit'])) {	
 	$nom = mysqli_real_escape_string($mysqli, $_POST['nom']);
@@ -33,7 +33,7 @@ if(isset($_POST['Submit'])) {
 		
 		//display success message
 		echo "<font color='green'>Data added successfully.";
-		echo "<br/><a href='index.php'>View Result</a>";
+		echo "<br/><a href='../index.php'>View Result</a>";
 	}
 }
 ?>
